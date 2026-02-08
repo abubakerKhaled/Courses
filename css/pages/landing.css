@@ -1,0 +1,157 @@
+/* Hero Section */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 20px;
+  gap: 2rem;
+  position: relative;
+  min-height: 80vh; /* Make sure there is room to scroll */
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  margin-bottom: 2.5rem;
+}
+
+.highlight {
+  color: var(--primary);
+  position: relative;
+  /* z-index: 1; */
+}
+
+.hero-cta {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Image Styling */
+.hero-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.student-image {
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 10px solid var(--card-bg); /* Optional border */
+  box-shadow: var(--shadow-md);
+  position: fixed;
+  right: 10%;
+  top: 25%;
+  z-index: -1; /* Behind content if overlapping, or can be 0 */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.student-image.hidden {
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+}
+
+/* Features Section */
+.features-section {
+  padding: 6rem 0;
+  background-color: var(--card-bg); /* Or transparent to show bg */
+  position: relative;
+  z-index: 1; /* Above fixed image */
+  background: var(--bg); /* Ensure it covers the fixed image if it scrolls under */
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.section-header p {
+  color: var(--text-muted);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  border: 1px solid var(--border);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary-light);
+}
+
+.feature-card .icon {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  padding: 10px;
+  background-color: rgba(37, 99, 235, 0.1);
+  border-radius: var(--radius-md);
+}
+
+.feature-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.feature-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-cta {
+    justify-content: center;
+  }
+
+  .student-image {
+    position: relative; /* On mobile, keep it strictly in flow */
+    width: 300px;
+    height: 300px;
+    right: auto;
+    top: auto;
+    margin-top: 2rem;
+    z-index: 0;
+  }
+}

@@ -1,0 +1,5 @@
+@import 'globals/colors.css';
+@import 'globals/base.css';
+@import 'components/nav.css';
+@import 'components/buttons.css';
+@import 'components/footer.css';
