@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "title": "Complete Web Development Bootcamp",
+    "instructor": "John Doe",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "description": "Become a full-stack web developer with just one course. HTML, CSS, Javascript, Node, React, MongoDB and more!",
+    "rating": 4.8,
+    "students": 12500,
+    "price": 99.99,
+    "category": "Development"
+  },
+  {
+    "id": 2,
+    "title": "Data Science A-Z™: Real-Life Data Science",
+    "instructor": "Jane Smith",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "description": "Learn Data Science step by step through real Analytics examples. Data Mining, Modeling, Tableau Visualization and more!",
+    "rating": 4.6,
+    "students": 8200,
+    "price": 89.99,
+    "category": "Data Science"
+  },
+  {
+    "id": 3,
+    "title": "The Ultimate Digital Marketing Course",
+    "instructor": "Mike Wilson",
+    "image": "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "description": "Master Digital Marketing Strategy, Social Media Marketing, SEO, YouTube, Email, Facebook Marketing, Analytics & More!",
+    "rating": 4.7,
+    "students": 5600,
+    "price": 79.99,
+    "category": "Marketing"
+  },
+  {
+    "id": 4,
+    "title": "iOS 16 & Swift - The Complete iOS App Development",
+    "instructor": "Sarah Connor",
+    "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "description": "From Beginner to iOS App Developer with Just One Course! Fully Updated with a Comprehensive Module Dedicated to SwiftUI!",
+    "rating": 4.9,
+    "students": 15000,
+    "price": 109.99,
+    "category": "Mobile Dev"
+  },
+  {
+    "id": 5,
+    "title": "Graphic Design Masterclass - Learn GREAT Design",
+    "instructor": "Lindsay Marsh",
+    "image": "https://images.unsplash.com/photo-1572044162444-ad60f128bdea?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "description": "The Ultimate Graphic Design Course Which Covers Photoshop, Illustrator, InDesign, Design Theory, Branding and Logo Design.",
+    "rating": 4.7,
+    "students": 9800,
+    "price": 69.99,
+    "category": "Design"
+  },
+  {
+    "id": 6,
+    "title": "Machine Learning A-Z™: AI, Python & R",
+    "instructor": "Kirill Eremenko",
+    "image": "https://images.unsplash.com/photo-1527474305487-b87b222841cc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "description": "Learn to create Machine Learning Algorithms in Python and R from two Data Science experts. Code templates included.",
+    "rating": 4.5,
+    "students": 22000,
+    "price": 94.99,
+    "category": "Data Science"
+  }
+]
