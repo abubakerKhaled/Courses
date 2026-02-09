@@ -40,6 +40,9 @@ export function updateAuthUI() {
   const user = getCurrentUser();
   const themeToggle = document.getElementById('theme-toggle');
   
+  console.log('UpdateAuthUI user:', user);
+  console.log('UpdateAuthUI themeToggle:', themeToggle);
+
   if (themeToggle) {
     themeToggle.remove();
   }
@@ -81,6 +84,7 @@ export function updateAuthUI() {
  * Call this on page load to set up the auth UI
  */
 export function initAuth() {
+  console.log('InitAuth called');
   updateAuthUI();
   
   // Redirect logged-in users away from login/register pages
