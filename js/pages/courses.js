@@ -35,7 +35,7 @@ function createCourseCard(course) {
         <p class="course-instructor">By ${course.instructor}</p>
         <div class="course-footer">
           <span class="course-price">$${course.price}</span>
-          <a href="#" class="btn btn-sm btn-primary">View Details</a>
+          <a href="course-details.html?id=${course.id}" class="btn btn-sm btn-primary">View Details</a>
         </div>
       </div>
     </article>

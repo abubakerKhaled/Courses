@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/pages/landing.css" />
+    <link rel="stylesheet" href="../css/pages/course-details.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Course Details - Courses</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="../index.html">Courses.</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+        </ul>
+        <div class="auth-buttons">
+          <a href="#" class="btn btn-text">Login</a>
+          <a href="#" class="btn btn-primary">Register</a>
+          <button
+            id="theme-toggle"
+            class="btn-icon"
+            aria-label="Toggle Dark Mode"
+          >
+            🌙
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div id="course-content" class="course-details-container">
+        <!-- Content will be injected here via JS -->
+        <div class="loading">Loading course details...</div>
+      </div>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <p>Copyright &copy; 2026 Courses. All rights reserved.</p>
+      </div>
+    </footer>
+    <script type="module" src="../js/pages/course-details.js"></script>
+  </body>
+</html>
