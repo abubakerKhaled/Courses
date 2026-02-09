@@ -86,8 +86,6 @@ export function initAuth() {
   // Redirect logged-in users away from login/register pages
   const currentPath = window.location.pathname;
   if (isLoggedIn() && (currentPath.includes('login.html') || currentPath.includes('register.html'))) {
-    // Optional: redirect to home if user is already logged in and tries to access login/register
-    // Commenting this out to allow flexibility
-    // window.location.href = currentPath.includes('/pages/') ? '../index.html' : 'index.html';
+    window.location.href = currentPath.includes('/pages/') ? '../index.html' : 'index.html';
   }
 }
