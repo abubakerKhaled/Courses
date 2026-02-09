@@ -74,7 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem('users', JSON.stringify(existingUsers));
 
     // 4. Success & Redirect
-    alert('Registration successful! Redirecting to login...');
     window.location.href = '../index.html'; // Redirect to home/login
   });
 

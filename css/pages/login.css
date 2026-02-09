@@ -1,0 +1,180 @@
+/* Login Page Styles */
+
+/* Ensure full height layout */
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main Layout */
+.split-screen {
+  display: flex;
+  flex: 1; /* Take remaining vertical space between header and footer */
+  min-height: 600px; /* Prevent squashing on very small screens */
+  width: 100%;
+}
+
+/* Left pane (Image) */
+.left-pane {
+  flex: 1;
+  background-image: url('../../images/student.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 300px; /* Ensure visibility on mobile if stacked */
+}
+
+/* Right pane (Form) */
+.right-pane {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--card-bg); /* Use variable for theme switching */
+  padding: 2rem;
+  transition: background-color 0.3s ease;
+}
+
+/* Card Styling */
+.login-card {
+  background-color: transparent;
+  padding: 0;
+  box-shadow: none;
+  width: 100%;
+  max-width: 500px; /* Restored for readability on desktop */
+}
+
+/* Typography & Headings */
+.form-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form-header h2 {
+  color: var(--text-main);
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Form Groups */
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--text-main);
+  font-size: 0.9rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: var(--text-main);
+  background-color: var(--bg); /* Slight contrast against card-bg */
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box; /* Critical for padding/width */
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.form-group input::placeholder {
+  color: var(--text-muted);
+  opacity: 0.7;
+}
+
+.error-message {
+  color: var(--danger);
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+  min-height: 1.25rem;
+}
+
+/* Button Styling */
+.btn-block {
+  width: 100%;
+  padding: 0.875rem;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 0.5rem;
+}
+
+.btn-block:hover {
+  background-color: var(--primary-dark);
+}
+
+/* Register Link */
+.register-link {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.register-link a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+/* Dark Mode Overrides */
+[data-theme="dark"] .left-pane {
+  filter: brightness(0.8);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .split-screen {
+    flex-direction: column; /* Stack on mobile */
+  }
+
+  .left-pane {
+    flex: none; /* Don't expand, use height */
+    height: 25vh; /* Top banner */
+    width: 100%;
+    order: -1; /* Ensure it's on top */
+  }
+
+  .right-pane {
+    align-items: flex-start; /* Align top on mobile */
+    padding: 2rem 1rem;
+  }
+
+  .login-card {
+    box-shadow: none; /* Cleaner look on mobile */
+    background: transparent;
+    padding: 0;
+  }
+}

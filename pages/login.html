@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/pages/register.css" />
+    <link rel="stylesheet" href="../css/pages/login.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap"
       rel="stylesheet"
     />
-    <title>Register - Courses</title>
+    <title>Login - Courses</title>
   </head>
   <body>
-    <!-- Reusing header structure -->
+    <!-- Header -->
     <header class="main-header">
       <nav class="navbar">
         <div class="logo">
@@ -41,25 +41,13 @@
         <!-- Background image handled by CSS -->
       </div>
       <div class="right-pane">
-        <div class="register-card">
+        <div class="login-card">
           <div class="form-header">
-            <h2>Create Account</h2>
-            <p class="subtitle">Join us and start learning today!</p>
+            <h2>Welcome Back</h2>
+            <p class="subtitle">Login to continue your learning journey!</p>
           </div>
 
-          <form id="register-form">
-            <div class="form-group">
-              <label for="username">Username</label>
-              <input
-                type="text"
-                id="username"
-                name="username"
-                placeholder="Enter your username"
-                required
-              />
-              <div class="error-message" id="username-error"></div>
-            </div>
-
+          <form id="login-form">
             <div class="form-group">
               <label for="email">Email Address</label>
               <input
@@ -78,31 +66,19 @@
                 type="password"
                 id="password"
                 name="password"
-                placeholder="Create a password"
+                placeholder="Enter your password"
                 required
               />
               <div class="error-message" id="password-error"></div>
             </div>
 
-            <div class="form-group">
-              <label for="confirm-password">Confirm Password</label>
-              <input
-                type="password"
-                id="confirm-password"
-                name="confirm-password"
-                placeholder="Confirm your password"
-                required
-              />
-              <div class="error-message" id="confirm-password-error"></div>
-            </div>
-
             <button type="submit" class="btn btn-primary btn-block">
-              Sign Up
+              Log In
             </button>
           </form>
 
-          <p class="login-link">
-            Already have an account? <a href="login.html">Log in</a>
+          <p class="register-link">
+            Don't have an account? <a href="register.html">Sign up</a>
           </p>
         </div>
       </div>
@@ -114,6 +90,6 @@
       </div>
     </footer>
     <script type="module" src="../js/main.js"></script>
-    <script type="module" src="../js/pages/register.js"></script>
+    <script type="module" src="../js/pages/login.js"></script>
   </body>
 </html>

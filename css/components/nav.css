@@ -37,3 +37,25 @@
   align-items: center;
   gap: 1rem;
 }
+
+/* User Profile Styles */
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--bg);
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.user-profile:hover {
+  background-color: var(--border);
+}
+
+.user-name {
+  font-weight: 600;
+  color: var(--text-main);
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
