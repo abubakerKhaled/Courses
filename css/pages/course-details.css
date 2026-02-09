@@ -50,3 +50,96 @@
     gap: 2rem;
   }
 }
+
+/* Curriculum Section */
+.course-curriculum {
+  margin-top: 4rem;
+}
+
+.course-curriculum h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--text-main);
+}
+
+.course-modules {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.module-item details {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.module-item summary {
+  padding: 1.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.1rem;
+  background-color: var(--bg);
+  color: var(--text-main);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+
+.module-item summary:hover {
+  background-color: var(--border);
+}
+
+.module-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.module-item summary::after {
+  content: '+';
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--primary);
+}
+
+.module-item details[open] summary::after {
+  content: '-';
+}
+
+.lesson-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: var(--card-bg);
+}
+
+.lesson-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid var(--border);
+  color: var(--text-main);
+  transition: background-color 0.2s;
+}
+
+.lesson-item:hover {
+  background-color: var(--bg);
+}
+
+.lesson-icon {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+
+.lesson-title {
+  flex: 1;
+  font-size: 1rem;
+}
+
+.lesson-duration {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-feature-settings: "tnum";
+}

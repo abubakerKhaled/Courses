@@ -56,6 +56,35 @@ function renderCourseDetails(course, container) {
       <h2>About this course</h2>
       <p>${course.description}</p>
     </div>
+    ${renderCurriculum(course.modules)}
+  `;
+}
+
+function renderCurriculum(modules) {
+  if (!modules || modules.length === 0) return '';
+
+  return `
+    <div class="course-curriculum">
+      <h2>Course Content</h2>
+      <div class="course-modules">
+        ${modules.map((module) => `
+          <div class="module-item">
+            <details open>
+                <summary class="module-title">${module.title}</summary>
+                <ul class="lesson-list">
+                ${module.lessons.map((lesson) => `
+                    <li class="lesson-item">
+                    <span class="lesson-icon">📺</span>
+                    <span class="lesson-title">${lesson.title}</span>
+                    <span class="lesson-duration">${lesson.duration}</span>
+                    </li>
+                `).join('')}
+                </ul>
+            </details>
+          </div>
+        `).join('')}
+      </div>
+    </div>
   `;
 }
 

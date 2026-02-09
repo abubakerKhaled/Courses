@@ -8,7 +8,30 @@
     "rating": 4.8,
     "students": 12500,
     "price": 99.99,
-    "category": "Development"
+    "category": "Development",
+    "modules": [
+      {
+        "title": "Introduction to Web Development",
+        "lessons": [
+          { "title": "How the Internet Works", "duration": "10:00" },
+          { "title": "History of the Web", "duration": "15:00" }
+        ]
+      },
+      {
+        "title": "HTML 5 Basics",
+        "lessons": [
+          { "title": "HTML Skeleton", "duration": "12:00" },
+          { "title": "Tags and Elements", "duration": "20:00" }
+        ]
+      },
+      {
+        "title": "CSS 3 Styling",
+        "lessons": [
+          { "title": "CSS Selectors", "duration": "18:00" },
+          { "title": "Box Model", "duration": "25:00" }
+        ]
+      }
+    ]
   },
   {
     "id": 2,
@@ -19,7 +42,30 @@
     "rating": 4.6,
     "students": 8200,
     "price": 89.99,
-    "category": "Data Science"
+    "category": "Data Science",
+    "modules": [
+      {
+        "title": "Introduction to Data Science",
+        "lessons": [
+          { "title": "What is Data Science?", "duration": "14:00" },
+          { "title": "Data Science Workflow", "duration": "18:00" }
+        ]
+      },
+      {
+        "title": "Data Preprocessing",
+        "lessons": [
+          { "title": "Handling Missing Data", "duration": "22:00" },
+          { "title": "Feature Scaling", "duration": "16:00" }
+        ]
+      },
+      {
+        "title": "Data Visualization",
+        "lessons": [
+          { "title": "Introduction to Tableau", "duration": "20:00" },
+          { "title": "Building Dashboards", "duration": "25:00" }
+        ]
+      }
+    ]
   },
   {
     "id": 3,
@@ -30,7 +76,30 @@
     "rating": 4.7,
     "students": 5600,
     "price": 79.99,
-    "category": "Marketing"
+    "category": "Marketing",
+    "modules": [
+      {
+        "title": "Marketing Fundamentals",
+        "lessons": [
+          { "title": "What is Digital Marketing?", "duration": "12:00" },
+          { "title": "Customer Funnels", "duration": "17:00" }
+        ]
+      },
+      {
+        "title": "SEO & Content Marketing",
+        "lessons": [
+          { "title": "Keyword Research", "duration": "19:00" },
+          { "title": "On-Page SEO", "duration": "21:00" }
+        ]
+      },
+      {
+        "title": "Social Media Marketing",
+        "lessons": [
+          { "title": "Facebook & Instagram Ads", "duration": "24:00" },
+          { "title": "Analytics & Optimization", "duration": "20:00" }
+        ]
+      }
+    ]
   },
   {
     "id": 4,
@@ -41,7 +110,30 @@
     "rating": 4.9,
     "students": 15000,
     "price": 109.99,
-    "category": "Mobile Dev"
+    "category": "Mobile Dev",
+    "modules": [
+      {
+        "title": "Swift Fundamentals",
+        "lessons": [
+          { "title": "Variables & Constants", "duration": "15:00" },
+          { "title": "Control Flow", "duration": "20:00" }
+        ]
+      },
+      {
+        "title": "UIKit Essentials",
+        "lessons": [
+          { "title": "View Controllers", "duration": "22:00" },
+          { "title": "Auto Layout", "duration": "26:00" }
+        ]
+      },
+      {
+        "title": "SwiftUI",
+        "lessons": [
+          { "title": "SwiftUI Basics", "duration": "18:00" },
+          { "title": "Building Real Apps", "duration": "30:00" }
+        ]
+      }
+    ]
   },
   {
     "id": 5,
@@ -52,7 +144,30 @@
     "rating": 4.7,
     "students": 9800,
     "price": 69.99,
-    "category": "Design"
+    "category": "Design",
+    "modules": [
+      {
+        "title": "Design Foundations",
+        "lessons": [
+          { "title": "Color Theory", "duration": "14:00" },
+          { "title": "Typography Basics", "duration": "18:00" }
+        ]
+      },
+      {
+        "title": "Adobe Photoshop",
+        "lessons": [
+          { "title": "Photo Manipulation", "duration": "22:00" },
+          { "title": "Layer Techniques", "duration": "19:00" }
+        ]
+      },
+      {
+        "title": "Branding & Logos",
+        "lessons": [
+          { "title": "Brand Identity", "duration": "20:00" },
+          { "title": "Logo Design Process", "duration": "25:00" }
+        ]
+      }
+    ]
   },
   {
     "id": 6,
@@ -63,6 +178,29 @@
     "rating": 4.5,
     "students": 22000,
     "price": 94.99,
-    "category": "Data Science"
+    "category": "Data Science",
+    "modules": [
+      {
+        "title": "Machine Learning Foundations",
+        "lessons": [
+          { "title": "What is Machine Learning?", "duration": "16:00" },
+          { "title": "Types of ML", "duration": "14:00" }
+        ]
+      },
+      {
+        "title": "Supervised Learning",
+        "lessons": [
+          { "title": "Linear Regression", "duration": "21:00" },
+          { "title": "Decision Trees", "duration": "23:00" }
+        ]
+      },
+      {
+        "title": "Unsupervised Learning",
+        "lessons": [
+          { "title": "Clustering with K-Means", "duration": "20:00" },
+          { "title": "Dimensionality Reduction", "duration": "18:00" }
+        ]
+      }
+    ]
   }
 ]
