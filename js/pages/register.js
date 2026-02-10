@@ -67,7 +67,8 @@ document.addEventListener('DOMContentLoaded', () => {
       id: Date.now(),
       username: username,
       email: email,
-      password: password // Note: In a real app, never store plain text passwords!
+      password: password, // Note: In a real app, never store plain text passwords!
+      enrolledCourses: []
     };
 
     existingUsers.push(newUser);
@@ -77,11 +78,9 @@ document.addEventListener('DOMContentLoaded', () => {
     window.location.href = '../index.html'; // Redirect to home/login
   });
 
-  // Real-time validation (optional UX improvement)
   confirmPasswordInput.addEventListener('input', () => {
     if (confirmPasswordInput.value !== passwordInput.value) {
-        // We could show error immediately, or just wait for submit. 
-        // For now, let's just clear if they match.
+        showError(confirmPasswordInput, 'Passwords do not match');
     } else {
         clearError(confirmPasswordInput);
     }

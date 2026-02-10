@@ -1,5 +1,7 @@
 import { loadData } from '../modules/data.js';
 import { initTheme } from '../modules/theme.js';
+import { isLoggedIn } from '../modules/auth.js';
+import { enrollInCourse, isEnrolled } from '../modules/enrollment.js';
 
 async function init() {
   initTheme();
@@ -29,6 +31,27 @@ async function init() {
   }
 
   renderCourseDetails(course, contentContainer);
+
+  const enrollBtn = contentContainer.querySelector('.enroll-btn');
+  if (enrollBtn) {
+    enrollBtn.addEventListener('click', () => {
+      if (!isLoggedIn()) {
+        window.location.href = 'login.html';
+        return;
+      }
+
+      if (enrollInCourse(course.id)) {
+        enrollBtn.textContent = 'Enrolled';
+        enrollBtn.disabled = true;
+      }
+    });
+
+    // If already enrolled, disable the button (double check in case render logic missed it or for safety)
+    if (isEnrolled(course.id)) {
+        enrollBtn.textContent = 'Enrolled';
+        enrollBtn.disabled = true;
+    }
+  }
 }
 
 function showError(container, message) {
@@ -49,7 +72,9 @@ function renderCourseDetails(course, container) {
         <h1>${course.title}</h1>
         <p class="instructor">By <strong>${course.instructor}</strong></p>
         <span class="price-tag">$${course.price}</span>
-        <button class="btn btn-primary btn-lg">Enroll Now</button>
+        <button class="btn btn-primary btn-lg enroll-btn" ${isEnrolled(course.id) ? 'disabled' : ''}>
+          ${isEnrolled(course.id) ? 'Enrolled' : 'Enroll Now'}
+        </button>
       </div>
     </div>
     <div class="course-description">
