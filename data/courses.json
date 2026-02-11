@@ -4,7 +4,7 @@
     "title": "Complete Web Development Bootcamp",
     "instructor": "John Doe",
     "image": "../images/courses/web-development.png",
-    "description": "Become a full-stack web developer with just one course. HTML, CSS, Javascript, Node, React, MongoDB and more!",
+    "description": "Become a full-stack web developer with just one course. HTML, CSS, JavaScript, Node, React, MongoDB and more!",
     "rating": 4.8,
     "students": 12500,
     "price": 99.99,
@@ -13,22 +13,70 @@
       {
         "title": "Introduction to Web Development",
         "lessons": [
-          { "title": "How the Internet Works", "duration": "10:00" },
-          { "title": "History of the Web", "duration": "15:00" }
+          {
+            "title": "How the Internet Works",
+            "duration": "10:00",
+            "type": "video",
+            "content": "https://www.w3schools.com/html/mov_bbb.mp4"
+          },
+          {
+            "title": "History of the Web",
+            "duration": "15:00",
+            "type": "text",
+            "content": "<h2>The Evolution of the Web</h2><p>The Web began as a simple document-sharing system created by Tim Berners-Lee in 1989. It evolved from static HTML pages (Web 1.0) into dynamic and interactive experiences (Web 2.0), and now includes decentralized and AI-powered technologies (Web 3.0).</p><ul><li>Web 1.0 – Static pages</li><li>Web 2.0 – Social & Interactive</li><li>Web 3.0 – Decentralized & Intelligent</li></ul><p><strong>Exercise:</strong> Research the difference between HTTP and HTTPS.</p>"
+          },
+          {
+            "title": "Client vs Server Architecture",
+            "duration": "18:00",
+            "type": "text",
+            "content": "<p>In web development, the client is the browser and the server is the machine that stores and processes data.</p><pre><code>Client → Request → Server → Response → Client</code></pre><p>Examples of servers: Apache, Nginx, Node.js.</p>"
+          }
         ]
       },
       {
-        "title": "HTML 5 Basics",
+        "title": "HTML 5 Complete Guide",
         "lessons": [
-          { "title": "HTML Skeleton", "duration": "12:00" },
-          { "title": "Tags and Elements", "duration": "20:00" }
+          {
+            "title": "HTML Document Structure",
+            "duration": "12:00",
+            "type": "video",
+            "content": "https://www.w3schools.com/html/mov_bbb.mp4"
+          },
+          {
+            "title": "Semantic HTML",
+            "duration": "20:00",
+            "type": "text",
+            "content": "<p>Semantic HTML introduces meaning to your markup using tags like &lt;article&gt;, &lt;section&gt;, &lt;header&gt;, &lt;footer&gt;.</p><p>This improves accessibility and SEO.</p>"
+          },
+          {
+            "title": "Forms & Validation",
+            "duration": "25:00",
+            "type": "text",
+            "content": "<p>Forms collect user data using input fields.</p><pre><code>&lt;form&gt;\n  &lt;input type='email' required /&gt;\n&lt;/form&gt;</code></pre><p>HTML5 includes built-in validation attributes like required, pattern, minlength.</p>"
+          }
         ]
       },
       {
-        "title": "CSS 3 Styling",
+        "title": "JavaScript Mastery",
         "lessons": [
-          { "title": "CSS Selectors", "duration": "18:00" },
-          { "title": "Box Model", "duration": "25:00" }
+          {
+            "title": "Variables & Data Types",
+            "duration": "18:00",
+            "type": "text",
+            "content": "<p>JavaScript variables can be declared using var, let, or const.</p><pre><code>let name = 'John';\nconst age = 25;</code></pre>"
+          },
+          {
+            "title": "DOM Manipulation",
+            "duration": "22:00",
+            "type": "video",
+            "content": "https://www.w3schools.com/html/mov_bbb.mp4"
+          },
+          {
+            "title": "Mini Project: To-Do App",
+            "duration": "40:00",
+            "type": "text",
+            "content": "<p>Build a to-do list using HTML, CSS, and JavaScript.</p><ol><li>Create input field</li><li>Add event listener</li><li>Store tasks in array</li><li>Render dynamically</li></ol>"
+          }
         ]
       }
     ]
@@ -45,132 +93,54 @@
     "category": "Data Science",
     "modules": [
       {
-        "title": "Introduction to Data Science",
+        "title": "Python for Data Science",
         "lessons": [
-          { "title": "What is Data Science?", "duration": "14:00" },
-          { "title": "Data Science Workflow", "duration": "18:00" }
+          {
+            "title": "NumPy Fundamentals",
+            "duration": "20:00",
+            "type": "text",
+            "content": "<p>NumPy allows efficient numerical computation.</p><pre><code>import numpy as np\narr = np.array([1,2,3])</code></pre>"
+          },
+          {
+            "title": "Pandas DataFrames",
+            "duration": "25:00",
+            "type": "video",
+            "content": "https://www.w3schools.com/html/mov_bbb.mp4"
+          }
         ]
       },
       {
-        "title": "Data Preprocessing",
+        "title": "Data Cleaning & Preparation",
         "lessons": [
-          { "title": "Handling Missing Data", "duration": "22:00" },
-          { "title": "Feature Scaling", "duration": "16:00" }
+          {
+            "title": "Handling Missing Data",
+            "duration": "22:00",
+            "type": "text",
+            "content": "<p>Missing values can be handled using:</p><ul><li>Drop rows</li><li>Fill with mean/median</li><li>Forward fill</li></ul>"
+          },
+          {
+            "title": "Feature Engineering",
+            "duration": "24:00",
+            "type": "text",
+            "content": "<p>Feature engineering transforms raw data into useful input features.</p>"
+          }
         ]
       },
       {
-        "title": "Data Visualization",
+        "title": "Real World Project",
         "lessons": [
-          { "title": "Introduction to Tableau", "duration": "20:00" },
-          { "title": "Building Dashboards", "duration": "25:00" }
+          {
+            "title": "Predicting House Prices",
+            "duration": "45:00",
+            "type": "text",
+            "content": "<p>Steps:</p><ol><li>Import dataset</li><li>Clean data</li><li>Train regression model</li><li>Evaluate using RMSE</li></ol>"
+          }
         ]
       }
     ]
   },
   {
     "id": 3,
-    "title": "The Ultimate Digital Marketing Course",
-    "instructor": "Mike Wilson",
-    "image": "../images/courses/digital-marketing.png",
-    "description": "Master Digital Marketing Strategy, Social Media Marketing, SEO, YouTube, Email, Facebook Marketing, Analytics & More!",
-    "rating": 4.7,
-    "students": 5600,
-    "price": 79.99,
-    "category": "Marketing",
-    "modules": [
-      {
-        "title": "Marketing Fundamentals",
-        "lessons": [
-          { "title": "What is Digital Marketing?", "duration": "12:00" },
-          { "title": "Customer Funnels", "duration": "17:00" }
-        ]
-      },
-      {
-        "title": "SEO & Content Marketing",
-        "lessons": [
-          { "title": "Keyword Research", "duration": "19:00" },
-          { "title": "On-Page SEO", "duration": "21:00" }
-        ]
-      },
-      {
-        "title": "Social Media Marketing",
-        "lessons": [
-          { "title": "Facebook & Instagram Ads", "duration": "24:00" },
-          { "title": "Analytics & Optimization", "duration": "20:00" }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 4,
-    "title": "iOS 16 & Swift - The Complete iOS App Development",
-    "instructor": "Sarah Connor",
-    "image": "../images/courses/mobile-development.png",
-    "description": "From Beginner to iOS App Developer with Just One Course! Fully Updated with a Comprehensive Module Dedicated to SwiftUI!",
-    "rating": 4.9,
-    "students": 15000,
-    "price": 109.99,
-    "category": "Mobile Dev",
-    "modules": [
-      {
-        "title": "Swift Fundamentals",
-        "lessons": [
-          { "title": "Variables & Constants", "duration": "15:00" },
-          { "title": "Control Flow", "duration": "20:00" }
-        ]
-      },
-      {
-        "title": "UIKit Essentials",
-        "lessons": [
-          { "title": "View Controllers", "duration": "22:00" },
-          { "title": "Auto Layout", "duration": "26:00" }
-        ]
-      },
-      {
-        "title": "SwiftUI",
-        "lessons": [
-          { "title": "SwiftUI Basics", "duration": "18:00" },
-          { "title": "Building Real Apps", "duration": "30:00" }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 5,
-    "title": "Graphic Design Masterclass - Learn GREAT Design",
-    "instructor": "Lindsay Marsh",
-    "image": "../images/courses/graphic-design.png",
-    "description": "The Ultimate Graphic Design Course Which Covers Photoshop, Illustrator, InDesign, Design Theory, Branding and Logo Design.",
-    "rating": 4.7,
-    "students": 9800,
-    "price": 69.99,
-    "category": "Design",
-    "modules": [
-      {
-        "title": "Design Foundations",
-        "lessons": [
-          { "title": "Color Theory", "duration": "14:00" },
-          { "title": "Typography Basics", "duration": "18:00" }
-        ]
-      },
-      {
-        "title": "Adobe Photoshop",
-        "lessons": [
-          { "title": "Photo Manipulation", "duration": "22:00" },
-          { "title": "Layer Techniques", "duration": "19:00" }
-        ]
-      },
-      {
-        "title": "Branding & Logos",
-        "lessons": [
-          { "title": "Brand Identity", "duration": "20:00" },
-          { "title": "Logo Design Process", "duration": "25:00" }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 6,
     "title": "Machine Learning A-Z™: AI, Python & R",
     "instructor": "Kirill Eremenko",
     "image": "../images/courses/machine-learning.png",
@@ -181,24 +151,37 @@
     "category": "Data Science",
     "modules": [
       {
-        "title": "Machine Learning Foundations",
+        "title": "Supervised Learning Deep Dive",
         "lessons": [
-          { "title": "What is Machine Learning?", "duration": "16:00" },
-          { "title": "Types of ML", "duration": "14:00" }
+          {
+            "title": "Linear Regression Mathematics",
+            "duration": "30:00",
+            "type": "text",
+            "content": "<p>Linear regression models the relationship between X and Y using:</p><pre><code>y = b0 + b1x</code></pre><p>Cost function: Mean Squared Error (MSE).</p>"
+          },
+          {
+            "title": "Logistic Regression",
+            "duration": "28:00",
+            "type": "video",
+            "content": "https://www.w3schools.com/html/mov_bbb.mp4"
+          }
         ]
       },
       {
-        "title": "Supervised Learning",
+        "title": "Neural Networks",
         "lessons": [
-          { "title": "Linear Regression", "duration": "21:00" },
-          { "title": "Decision Trees", "duration": "23:00" }
-        ]
-      },
-      {
-        "title": "Unsupervised Learning",
-        "lessons": [
-          { "title": "Clustering with K-Means", "duration": "20:00" },
-          { "title": "Dimensionality Reduction", "duration": "18:00" }
+          {
+            "title": "Perceptron Model",
+            "duration": "26:00",
+            "type": "text",
+            "content": "<p>A perceptron is a single neuron model.</p><pre><code>output = activation(weights * inputs + bias)</code></pre>"
+          },
+          {
+            "title": "Backpropagation",
+            "duration": "35:00",
+            "type": "text",
+            "content": "<p>Backpropagation updates weights using gradient descent.</p>"
+          }
         ]
       }
     ]
