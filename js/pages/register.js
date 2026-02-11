@@ -1,7 +1,4 @@
-/**
- * Registration Page Logic
- * Handles form validation and storage of user data in localStorage.
- */
+import { showError, clearError } from '../modules/error.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const registerForm = document.getElementById('register-form');
@@ -9,23 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const emailInput = document.getElementById('email');
   const passwordInput = document.getElementById('password');
   const confirmPasswordInput = document.getElementById('confirm-password');
-
-  // Error display helper
-  const showError = (input, message) => {
-    const errorDiv = document.getElementById(`${input.id}-error`);
-    if (errorDiv) {
-      errorDiv.textContent = message;
-    }
-    input.classList.add('error');
-  };
-
-  const clearError = (input) => {
-    const errorDiv = document.getElementById(`${input.id}-error`);
-    if (errorDiv) {
-      errorDiv.textContent = '';
-    }
-    input.classList.remove('error');
-  };
 
   // Main Form Submission Handler
   registerForm.addEventListener('submit', (e) => {

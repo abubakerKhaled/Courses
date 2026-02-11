@@ -2,28 +2,12 @@
  * Login Page Logic
  * Handles form validation and authentication against localStorage.
  */
+import { showError, clearError } from '../modules/error.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const loginForm = document.getElementById('login-form');
   const emailInput = document.getElementById('email');
   const passwordInput = document.getElementById('password');
-
-  // Error display helper
-  const showError = (input, message) => {
-    const errorDiv = document.getElementById(`${input.id}-error`);
-    if (errorDiv) {
-      errorDiv.textContent = message;
-    }
-    input.classList.add('error');
-  };
-
-  const clearError = (input) => {
-    const errorDiv = document.getElementById(`${input.id}-error`);
-    if (errorDiv) {
-      errorDiv.textContent = '';
-    }
-    input.classList.remove('error');
-  };
 
   // Main Form Submission Handler
   loginForm.addEventListener('submit', (e) => {
