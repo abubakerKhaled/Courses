@@ -1,10 +1,9 @@
 import { loadData } from '../modules/data.js';
-import { initTheme } from '../modules/theme.js';
+
 import { isLoggedIn } from '../modules/auth.js';
 import { enrollInCourse, isEnrolled } from '../modules/enrollment.js';
 
 async function init() {
-  initTheme();
   const contentContainer = document.getElementById('course-content');
   if (!contentContainer) return;
 

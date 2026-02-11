@@ -1,8 +1,7 @@
 import { loadData } from '../modules/data.js';
-import { initTheme } from '../modules/theme.js';
+
 
 async function init() {
-  initTheme();
   const coursesGrid = document.getElementById('courses-grid');
   if (!coursesGrid) return;
 
