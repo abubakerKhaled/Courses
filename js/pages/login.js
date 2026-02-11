@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 2. Basic validation
     if (!email || !password) {
-      alert('Please fill in all fields');
+      showError(emailInput, 'Please fill in all fields');
       return;
     }
 

@@ -169,8 +169,6 @@ function setupModal() {
   // Add click listeners to locked lessons
   document.querySelectorAll('.lesson-item.locked').forEach(item => {
     item.addEventListener('click', () => {
-       alert('Please enroll in the course to access this content.');
-       // Optionally scroll to enroll button
        document.querySelector('.enroll-btn')?.scrollIntoView({behavior: 'smooth'});
     });
   });
